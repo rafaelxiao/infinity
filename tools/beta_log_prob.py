@@ -24,10 +24,8 @@ def beta_ln(a, b):
 def beta_log_prob(x, a, b):
     if type(x) == list or type(x) == np.ndarray:
         x = np.array(x)
-    if type(a) == list or type(a) == np.ndarray:
-        a = np.array(a)
-    if type(b) == list or type(b) == np.ndarray:
-        b = np.array(b)
+        a = np.array([a for _ in x])
+        b = np.array([b for _ in x])
 
     alnx = (a-1) * np.log(x)
     blnx = (b-1) * np.log(1-x)
@@ -83,10 +81,10 @@ class Test(unittest.TestCase):
             np.round(beta_log_prob(0.3, 15, 33), 2), 1.78
         )
 
-        a = [14, 22, 2]
-        b = [56, 21, 89]
+        a = 14
+        b = 56
         x = [0.3, 0.89, 0.13]
-        p = [0.04, -16.54, -5.31]
+        p = [0.04, -87.60, 1.13]
         self.assertListEqual(
             np.round(beta_log_prob(x, a, b), 2).tolist(), p
         )
