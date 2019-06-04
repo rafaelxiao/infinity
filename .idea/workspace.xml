@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87962020-d207-4956-8a24-7a648e9af0f8" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tools/beta_log_prob.py" afterPath="$PROJECT_DIR$/tools/stat_beta_log_prob.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/infinity.iml" afterPath="$PROJECT_DIR$/.idea/infinity.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/__init__.py" afterPath="$PROJECT_DIR$/tools/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workshop/binomial_beta_posterior.ipynb" afterPath="$PROJECT_DIR$/workshop/binomial_beta_posterior.ipynb" />
-    </list>
+    <list default="true" id="87962020-d207-4956-8a24-7a648e9af0f8" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +47,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stat_beta_binom_log_prob.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="stat_beta_binom_log_prob.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tools/stat_beta_binom_log_prob.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="66">
@@ -62,6 +55,26 @@
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NB_BernoulliNB.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/NB_BernoulliNB.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="463">
+              <caret line="52" column="45" lean-forward="false" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -145,6 +158,9 @@
         <option value="$PROJECT_DIR$/tools/binom_log_prob.py" />
         <option value="$PROJECT_DIR$/tools/__init__.py" />
         <option value="$PROJECT_DIR$/tools/stat_beta_binom_log_prob.py" />
+        <option value="$PROJECT_DIR$/models/__init__.py" />
+        <option value="$PROJECT_DIR$/models/NB_bernoulliNB.py" />
+        <option value="$PROJECT_DIR$/models/NB_BernoulliNB.py" />
       </list>
     </option>
   </component>
@@ -208,6 +224,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infinity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infinity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -541,26 +571,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tools/stat_beta_log_prob.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1958">
-          <caret line="89" column="9" lean-forward="true" selection-start-line="89" selection-start-column="9" selection-end-line="89" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/stat_beta_binom_log_prob.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tools/math_n_choose_k.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="858">
@@ -868,6 +878,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -908,6 +919,22 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/NB_BernoulliNB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="52" column="45" lean-forward="false" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
