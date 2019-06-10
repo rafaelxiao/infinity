@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87962020-d207-4956-8a24-7a648e9af0f8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/data_load_data.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workshop/.ipynb_checkpoints/naive_bayes_bow_demo-checkpoint.ipynb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workshop/naive_bayes_bow_demo.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/infinity.iml" afterPath="$PROJECT_DIR$/.idea/infinity.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/NB_BernoulliNB.py" afterPath="$PROJECT_DIR$/models/NB_BernoulliNB.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/__init__.py" afterPath="$PROJECT_DIR$/models/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/__init__.py" afterPath="$PROJECT_DIR$/tools/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workshop/__init__.py" afterPath="$PROJECT_DIR$/workshop/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workshop/beta_binom_post_pred.ipynb" afterPath="$PROJECT_DIR$/workshop/beta_binom_post_pred.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workshop/.ipynb_checkpoints/gauss_height_weight-checkpoint.ipynb" afterPath="$PROJECT_DIR$/workshop/.ipynb_checkpoints/gauss_height_weight-checkpoint.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workshop/gauss_height_weight.ipynb" afterPath="$PROJECT_DIR$/workshop/gauss_height_weight.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,20 +22,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="lab.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="data_load_data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tools/data_load_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="132">
               <caret line="7" column="57" lean-forward="false" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -62,7 +47,7 @@
       <file leaf-file-name="stat_beta_log_prob.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tools/stat_beta_log_prob.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-926">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -73,18 +58,30 @@
         <entry file="file://$PROJECT_DIR$/workshop/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+              <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NB_BernoulliNB.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NB_BernoulliNB.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/NB_BernoulliNB.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1620">
+            <state relative-caret-position="1188">
               <caret line="54" column="44" lean-forward="false" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plot_gaussian_2d_plot.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tools/plot_gaussian_2d_plot.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,18 +89,18 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tools/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="330">
+              <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="20" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -111,11 +108,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/__init__.py">
+      <file leaf-file-name="process_canonize_labels.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tools/process_canonize_labels.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+            <state relative-caret-position="660">
+              <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stat_beta_binom_log_prob.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tools/stat_beta_binom_log_prob.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-730">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -154,18 +163,19 @@
         <option value="$PROJECT_DIR$/tools/stat_beta_binom_log_prob.py" />
         <option value="$PROJECT_DIR$/models/NB_bernoulliNB.py" />
         <option value="$PROJECT_DIR$/tools/data_load_data.py" />
-        <option value="$PROJECT_DIR$/tools/__init__.py" />
         <option value="$PROJECT_DIR$/workshop/__init__.py" />
         <option value="$PROJECT_DIR$/models/__init__.py" />
         <option value="$PROJECT_DIR$/models/NB_BernoulliNB.py" />
+        <option value="$PROJECT_DIR$/tools/plot_gaussian_2d_plot.py" />
+        <option value="$PROJECT_DIR$/tools/process_canonize_labels.py" />
+        <option value="$PROJECT_DIR$/tools/__init__.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="y" value="23" />
+    <option name="width" value="1366" />
+    <option name="height" value="677" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -185,7 +195,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -242,7 +252,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -266,23 +276,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.data_load_data">
-    <configuration default="false" name="Unittests in stat_beta_log_prob.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="C:\Users\Xiao\Miniconda3\envs\athena\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="infinity" />
-      <option name="_new_pattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tools/stat_beta_log_prob.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in process_canonize_labels.py">
     <configuration default="false" name="Unittests in stat_beta_binom_log_prob.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -347,6 +341,22 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in process_canonize_labels.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="$USER_HOME$/miniconda3/envs/athena/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="infinity" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tools/process_canonize_labels.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -446,19 +456,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in stat_beta_log_prob.py" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in stat_beta_binom_log_prob.py" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in math_n_choose_k.py" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in stat_binom_log_prob.py" />
-      <item index="4" class="java.lang.String" itemvalue="Python.data_load_data" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in stat_beta_binom_log_prob.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in math_n_choose_k.py" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in stat_binom_log_prob.py" />
+      <item index="3" class="java.lang.String" itemvalue="Python.data_load_data" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in process_canonize_labels.py" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.data_load_data" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in stat_binom_log_prob.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in stat_beta_binom_log_prob.py" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in math_n_choose_k.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in stat_beta_log_prob.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in process_canonize_labels.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python.data_load_data" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in stat_binom_log_prob.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in stat_beta_binom_log_prob.py" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in math_n_choose_k.py" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -495,18 +505,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_beta_binom_log_prob_py - 2019.06.04 at 12h 15m 48s.xml">
-      <configuration name="Unittests in beta_binom_log_prob.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_beta_binom_log_prob_py - 2019.06.04 at 12h 16m 29s.xml">
-      <configuration name="Unittests in beta_binom_log_prob.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_beta_binom_log_prob_py - 2019.06.04 at 12h 18m 09s.xml">
-      <configuration name="Unittests in beta_binom_log_prob.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_beta_binom_log_prob_py - 2019.06.04 at 12h 19m 08s.xml">
-      <configuration name="Unittests in beta_binom_log_prob.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_beta_binom_log_prob_py - 2019.06.04 at 12h 20m 20s.xml">
       <configuration name="Unittests in beta_binom_log_prob.py" configurationId="tests" />
     </history-entry>
@@ -525,6 +523,18 @@
     <history-entry file="Unittests_in_n_choose_k_py - 2019.06.04 at 13h 29m 11s.xml">
       <configuration name="Unittests in n_choose_k.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_process_canonize_labels_py - 2019.06.10 at 17h 51m 24s.xml">
+      <configuration name="Unittests in process_canonize_labels.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_process_canonize_labels_py - 2019.06.10 at 18h 01m 07s.xml">
+      <configuration name="Unittests in process_canonize_labels.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_process_canonize_labels_py - 2019.06.10 at 18h 01m 55s.xml">
+      <configuration name="Unittests in process_canonize_labels.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_process_canonize_labels_py - 2019.06.10 at 18h 03m 23s.xml">
+      <configuration name="Unittests in process_canonize_labels.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -536,17 +546,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="0" y="23" width="1366" height="677" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31417832" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32326284" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30351076" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3025641" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39971346" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3982906" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -568,15 +579,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tools/stat_binom_log_prob.py" />
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tools/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -791,7 +793,6 @@
     </entry>
     <entry file="file://$USER_HOME$/miniconda3/envs/athena/lib/python3.6/site-packages/numpy/__init__.py" />
     <entry file="file://$PROJECT_DIR$/tools/math_n_choose_k.py" />
-    <entry file="file://$PROJECT_DIR$/tools/stat_beta_binom_log_prob.py" />
     <entry file="file://$PROJECT_DIR$/tools/stat_binom_log_prob.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -800,43 +801,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools/stat_beta_log_prob.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/workshop/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tools/data_load_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="132">
           <caret line="7" column="57" lean-forward="false" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -846,9 +821,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/NB_BernoulliNB.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
+        <state relative-caret-position="1188">
           <caret line="54" column="44" lean-forward="false" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/plot_gaussian_2d_plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/stat_beta_log_prob.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-926">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/stat_beta_binom_log_prob.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-730">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/process_canonize_labels.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
