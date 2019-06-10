@@ -1,5 +1,5 @@
-from .NB_BernoulliNB import BernoulliNB
+from .Bernoulli_NB import Bernoulli_Naive_Bayes
 
 __all__ = [
-    'BernoulliNB',
+    'Bernoulli_Naive_Bayes',
 ]

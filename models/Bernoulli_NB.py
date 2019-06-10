@@ -1,7 +1,7 @@
 import numpy as np
 
 
-class BernoulliNB:
+class Bernoulli_Naive_Bayes:
     '''
     What are the input
     - x in (N, D)
