@@ -1,5 +1,7 @@
 import numpy as np
 
+# Todo: in case if no X in a specific class of y, mu = xbar
+
 class Discriminant_Analysis:
     '''
     X: (n, d)
@@ -39,6 +41,8 @@ class Discriminant_Analysis:
             self._fit_diag(X, y)
         elif self.type == 'rda':
             self._fit_rda(X, y, lam)
+        elif self.type == 'shrunkencentroids':
+            self._fit_shrunken_centroids(X, y, lam)
         else:
             pass
 
@@ -99,17 +103,55 @@ class Discriminant_Analysis:
             mu = np.mean(X[idx], axis=0)
             self.beta[:, i] = V.T @ Z_cov_inv @ mu
 
+    def _fit_shrunken_centroids(self, X, y, lam):
+        k, d, n = self._found_ns(X, y)
+        N_cls = np.zeros(k)
+        xbar = np.mean(X, axis=0) # The centroid of whole set
+        sse = np.zeros(d)
+        self.mu = np.zeros((d, k))
+        for (i, j) in enumerate(self.N_classes):
+            idx = np.where(y==j)
+            self.mu[:, i] = np.mean(X[idx], axis=0)
+            N_cls[i] = len(idx[0])
+            if N_cls[i] == 0:
+                centroid = xbar
+            else:
+                centroid = np.mean(X[idx], axis=0)
+            sse += np.sum(
+                (X[idx] - np.repeat(centroid, N_cls[i], axis=0).reshape(-1, d))**2,
+                axis=0
+            )
+        sigma = np.sqrt(sse / (n-k))
+        s0 = np.median(sigma) # what is this?
+        m = np.zeros(k) # what is this?
+        offset = np.zeros((k, d))
+
+        for (i, j) in enumerate(self.N_classes):
+            if N_cls[i] == 0:
+                m[i] = 0
+            else:
+                m[i] = np.sqrt(1/(N_cls[i] - 1/n))
+            offset[i, :] = (self.mu[:, i] - xbar) / (m[i] * (sigma+s0))
+            offset[i, :] = self._soft_threshold(offset[i, :], lam)
+        print(m)
+        print(offset)
+
+
+
+    def _soft_threshold(self, x, delta):
+        return np.sign(x) * np.max([np.abs(x)-delta, 0])
+
 from sklearn.datasets import load_iris
 iris = load_iris()
 X = iris['data']
 y = iris['target']
 
-DA = Discriminant_Analysis('diag')
-DA.fit(X, y)
-#DA.fit(X, y, 0.8)
+DA = Discriminant_Analysis('shrunkencentroids')
+#DA.fit(X, y)
+DA.fit(X, y, 0.8)
 
 #print(DA.beta)
-print(DA.mu)
+#print(DA.mu)
 #print(DA.cov)
 #print(DA.prior)
 #print(DA.N_classes)
