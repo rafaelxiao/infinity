@@ -1,6 +1,10 @@
 import numpy as np
+from scipy.stats import multivariate_normal as mvn
 
-# Todo: in case if no X in a specific class of y, mu = xbar
+# Todo:
+#   - in case if no X in a specific class of y, mu = xbar
+#   - underflow problem, need to work in log space
+#   - rda and shrunkencentroids not quite right
 
 class Discriminant_Analysis:
     '''
@@ -83,12 +87,12 @@ class Discriminant_Analysis:
         k, d, n  = self._found_ns(X, y)
         self.prior = np.zeros(k)
         self.mu = np.zeros((d, k))
-        self.cov = np.zeros(d)
+        self.cov = np.zeros((d, k))
         for (i, j) in enumerate(self.N_classes):
             idx = np.where(y==j)
             self.prior[i] = y[idx].shape[0]
             self.mu[:, i] = np.mean(X[idx], axis=0)
-            self.cov[i] = np.var(X[idx])
+            self.cov[:, i] = np.var(X[idx], axis=0)
         self.prior = self.prior / np.sum(self.prior)
 
     def _fit_rda(self, X, y, lam):
@@ -98,10 +102,14 @@ class Discriminant_Analysis:
         Z_cov = np.cov(Z)
         Z_cov_inv = np.linalg.inv(lam*np.diag(np.diag(Z_cov)) + (1-lam)*Z_cov)
         self.beta = np.zeros((d, k))
+        self.prior = np.zeros(k)
+        self.mu = np.zeros((d, k))
         for (i, j) in enumerate(self.N_classes):
             idx = np.where(y==j)
-            mu = np.mean(X[idx], axis=0)
-            self.beta[:, i] = V.T @ Z_cov_inv @ mu
+            self.mu[:, i] = np.mean(X[idx], axis=0)
+            self.beta[:, i] = V @ Z_cov_inv @ self.mu[:, i]
+            self.prior[i] = y[idx].shape[0]
+        self.prior = self.prior / np.sum(self.prior)
 
     def _fit_shrunken_centroids(self, X, y, lam):
         k, d, n = self._found_ns(X, y)
@@ -109,9 +117,11 @@ class Discriminant_Analysis:
         xbar = np.mean(X, axis=0) # The centroid of whole set
         sse = np.zeros(d)
         self.mu = np.zeros((d, k))
+        self.prior = np.zeros(k)
         for (i, j) in enumerate(self.N_classes):
             idx = np.where(y==j)
             self.mu[:, i] = np.mean(X[idx], axis=0)
+            self.prior[i] = y[idx].shape[0]
             N_cls[i] = len(idx[0])
             if N_cls[i] == 0:
                 centroid = xbar
@@ -125,6 +135,7 @@ class Discriminant_Analysis:
         s0 = np.median(sigma) # what is this?
         m = np.zeros(k) # what is this?
         offset = np.zeros((k, d))
+        self.prior = self.prior / np.sum(self.prior)
 
         for (i, j) in enumerate(self.N_classes):
             if N_cls[i] == 0:
@@ -133,25 +144,53 @@ class Discriminant_Analysis:
                 m[i] = np.sqrt(1/(N_cls[i] - 1/n))
             offset[i, :] = (self.mu[:, i] - xbar) / (m[i] * (sigma+s0))
             offset[i, :] = self._soft_threshold(offset[i, :], lam)
-        print(m)
-        print(offset)
+            self.mu[:, i] = (xbar + m[i]*(sigma+s0)) * offset[i, :]
 
-
+        self.sigma = sigma ** 2
+        self.shrunken_centroids = offset
 
     def _soft_threshold(self, x, delta):
-        return np.sign(x) * np.max([np.abs(x)-delta, 0])
+        zero = np.zeros(len(x))
+        return np.sign(x) * np.max([np.abs(x)-delta, zero])
 
-from sklearn.datasets import load_iris
-iris = load_iris()
-X = iris['data']
-y = iris['target']
+    def predict(self, X_test):
+        k = len(self.N_classes)
+        lik = np.zeros((X_test.shape[0], k))
+        for i in range(k):
+            if self.type in ['linear', 'lda']:
+                lik[:, i] = mvn.pdf(X_test, mean=self.mu[:, i], cov=self.cov)
+            elif self.type in ['quadratic', 'qda']:
+                lik[:, i] = mvn.pdf(X_test, mean=self.mu[:, i], cov=self.cov[:, :, i])
+            elif self.type == 'diag':
+                lik[:, i] = mvn.pdf(X_test, mean=self.mu[:, i], cov=np.diag(self.cov[:, i]))
+            elif self.type == 'rda':
+                gamma = -1/2 * self.mu[:, i].T @ self.beta[:, i]
+                lik[:, i] = np.exp(np.exp(X_test @ self.beta[:, i] + gamma))
+            elif self.type == 'shrunkencentroids':
+                lik[:, i] = mvn.pdf(X_test, mean=self.mu[:, i], cov=np.diag(self.sigma))
+            else:
+                pass
+        joint = self.prior * lik
+        post = joint / np.sum(joint, axis=1).reshape(-1, 1)
+        print(post)
 
-DA = Discriminant_Analysis('shrunkencentroids')
-#DA.fit(X, y)
-DA.fit(X, y, 0.8)
 
-#print(DA.beta)
-#print(DA.mu)
-#print(DA.cov)
-#print(DA.prior)
-#print(DA.N_classes)
+if __name__ == '__main__':
+    from sklearn.datasets import load_iris
+    iris = load_iris()
+    X = iris['data']
+    y = iris['target']
+
+    DA = Discriminant_Analysis('shrunkencentroids')
+    #DA.fit(X, y)
+    DA.fit(X, y, 0.1)
+    DA.predict(X)
+
+    #print(DA.beta)
+    #print(DA.mu)
+    #print(DA.cov)
+    #print(DA.prior)
+    #print(DA.N_classes)
+    #print(DA.sigma)
+    #print(DA.mu)
+    #print(DA.shrunken_centroids)
