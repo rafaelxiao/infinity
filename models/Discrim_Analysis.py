@@ -1,9 +1,9 @@
 import numpy as np
-from scipy.stats import multivariate_normal as mvn
+from tools import gauss_log_prob
+from scipy.special import logsumexp
 
 # Todo:
 #   - in case if no X in a specific class of y, mu = xbar
-#   - underflow problem, need to work in log space
 #   - rda and shrunkencentroids not quite right
 
 class Discriminant_Analysis:
@@ -155,24 +155,26 @@ class Discriminant_Analysis:
 
     def predict(self, X_test):
         k = len(self.N_classes)
-        lik = np.zeros((X_test.shape[0], k))
+        loglik = np.zeros((X_test.shape[0], k))
         for i in range(k):
             if self.type in ['linear', 'lda']:
-                lik[:, i] = mvn.pdf(X_test, mean=self.mu[:, i], cov=self.cov)
+                loglik[:, i] = gauss_log_prob(X_test, self.mu[:, i], self.cov)
             elif self.type in ['quadratic', 'qda']:
-                lik[:, i] = mvn.pdf(X_test, mean=self.mu[:, i], cov=self.cov[:, :, i])
+                loglik[:, i] = gauss_log_prob(X_test, self.mu[:, i], self.cov[:, :, i])
             elif self.type == 'diag':
-                lik[:, i] = mvn.pdf(X_test, mean=self.mu[:, i], cov=np.diag(self.cov[:, i]))
+                loglik[:, i] = gauss_log_prob(X_test, self.mu[:, i], np.diag(self.cov[:, i]))
             elif self.type == 'rda':
                 gamma = -1/2 * self.mu[:, i].T @ self.beta[:, i]
-                lik[:, i] = np.exp(np.exp(X_test @ self.beta[:, i] + gamma))
+                loglik[:, i] = np.exp(X_test @ self.beta[:, i] + gamma)
             elif self.type == 'shrunkencentroids':
-                lik[:, i] = mvn.pdf(X_test, mean=self.mu[:, i], cov=np.diag(self.sigma))
+                loglik[:, i] = gauss_log_prob(X_test, self.mu[:, i], np.diag(self.sigma))
             else:
                 pass
-        joint = self.prior * lik
-        post = joint / np.sum(joint, axis=1).reshape(-1, 1)
-        print(post)
+        logjoint = loglik + np.log(self.prior)
+        logpost = logjoint - np.repeat(logsumexp(logjoint, axis=1), k).reshape(-1, k)
+        post = np.exp(logpost)
+
+        return np.argmax(post, axis=1), post
 
 
 if __name__ == '__main__':
@@ -181,16 +183,7 @@ if __name__ == '__main__':
     X = iris['data']
     y = iris['target']
 
-    DA = Discriminant_Analysis('shrunkencentroids')
-    #DA.fit(X, y)
-    DA.fit(X, y, 0.1)
-    DA.predict(X)
-
-    #print(DA.beta)
-    #print(DA.mu)
-    #print(DA.cov)
-    #print(DA.prior)
-    #print(DA.N_classes)
-    #print(DA.sigma)
-    #print(DA.mu)
-    #print(DA.shrunken_centroids)
+    DA = Discriminant_Analysis('lda')
+    DA.fit(X, y, 0.9)
+    y_pred, y_prob = DA.predict(X)
+    print(y_prob)

@@ -5,6 +5,7 @@ from .stat_binom_log_prob import binom_log_prob
 from .data_load_data import load_data
 from .plot_gaussian_2d_plot import gaussian_2d_plot
 from .process_canonize_labels import canonize_labels
+from .stat_gauss_log_prob import gauss_log_prob
 
 __all__ = [
     'beta_log_prob',
@@ -14,4 +15,5 @@ __all__ = [
     'load_data',
     'gaussian_2d_plot',
     'canonize_labels',
+    'gauss_log_prob',
 ]
