@@ -183,7 +183,7 @@ if __name__ == '__main__':
     X = iris['data']
     y = iris['target']
 
-    DA = Discriminant_Analysis('lda')
-    DA.fit(X, y, 0.9)
+    DA = Discriminant_Analysis('shrunkencentroids')
+    DA.fit(X, y, 1)
     y_pred, y_prob = DA.predict(X)
     print(y_prob)
