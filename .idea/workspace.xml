@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87962020-d207-4956-8a24-7a648e9af0f8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/workshop/hml_c9_unsupervised_learning.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/workshop/hml_c9_unsupervised_learning.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workshop/naive_bayes_bow_demo.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/workshop/naive_bayes_bow_demo.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workshop/hml_c10_intro_to_ann.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/workshop/hml_c10_intro_to_ann.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -514,7 +513,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15836431" />
       <window_info id="Structure" order="1" weight="0.25" />
