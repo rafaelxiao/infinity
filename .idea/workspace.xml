@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87962020-d207-4956-8a24-7a648e9af0f8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/workshop/hml_c10_intro_to_ann.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/workshop/hml_c10_intro_to_ann.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="87962020-d207-4956-8a24-7a648e9af0f8" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,15 +16,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workshop/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="12" selection-start-column="12" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/Bernoulli_NB.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -51,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tools/data_load_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="90" />
+            <state relative-caret-position="210">
+              <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -163,6 +152,7 @@
         <option value="$PROJECT_DIR$/tools/__init__.py" />
         <option value="$PROJECT_DIR$/models/Discrim_Analysis.py" />
         <option value="$PROJECT_DIR$/tools/data_load_data.py" />
+        <option value="$PROJECT_DIR$/models/Seq_Neural_Network.py" />
       </list>
     </option>
   </component>
@@ -206,7 +196,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -233,7 +223,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Discrim_Analysis">
+  <component name="RunManager" selected="Python.Seq_Neural_Network">
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -266,6 +256,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/Discrim_Analysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Seq_Neural_Network" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="infinity" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/Seq_Neural_Network.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -363,21 +374,6 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in stat_binom_log_prob.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="infinity" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="$USER_HOME$/miniconda3/envs/athena/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_pattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tools/stat_binom_log_prob.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
       <module name="ML" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -445,15 +441,15 @@
       <item itemvalue="Python.data_load_data" />
       <item itemvalue="Python.stat_gauss_log_prob" />
       <item itemvalue="Python tests.Unittests in process_canonize_labels.py" />
-      <item itemvalue="Python tests.Unittests in stat_binom_log_prob.py" />
+      <item itemvalue="Python.Seq_Neural_Network" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Seq_Neural_Network" />
         <item itemvalue="Python.Discrim_Analysis" />
         <item itemvalue="Python.stat_gauss_log_prob" />
         <item itemvalue="Python tests.Unittests in process_canonize_labels.py" />
         <item itemvalue="Python.data_load_data" />
-        <item itemvalue="Python tests.Unittests in stat_binom_log_prob.py" />
       </list>
     </recent_temporary>
   </component>
@@ -513,8 +509,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15836431" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15836431" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -636,10 +633,17 @@
     <entry file="file://$PROJECT_DIR$/tools/stat_beta_binom_log_prob.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/Seq_Neural_Network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tools/data_load_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="90" />
+        <state relative-caret-position="210">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
